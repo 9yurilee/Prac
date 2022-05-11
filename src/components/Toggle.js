@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import '../App.css';
 
 const Toggle = () => {
-  const [clicked, setClicked] = react.useState(false);
-  const [clickDetail, setClickDetail] = react.useState(true);
+  const [clicked, setClicked] = react.useState(true);
+  const [clickDetail, setClickDetail] = react.useState(false);
 
   const clickMenu = () => {
     setClicked(!clicked);

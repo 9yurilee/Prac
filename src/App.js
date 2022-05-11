@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       {/* <TogglePrac /> */}
       <Toggle />
-      {/* <Tab /> */}
+      <Tab />
       {/* <Slider /> */}
       {/* <Input /> */}
       {/* <DropDown /> */}
