@@ -1,3 +1,9 @@
+### Goal✨
+✏️ 다섯가지 기능 구현 로직 파악하기 <br />
+✏️ CSS 파일 이용하기 <br />
+<br />
+<br />
+
 ## 1. Toggle
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/97436315/167864272-5be50009-3d1d-4fab-9da6-ea115e7e4a39.gif)
 - 버튼을 클릭할 때 마다 선택된 항목으로 변경 ✔️
@@ -27,3 +33,5 @@
 ## 5. DropDown
 - 드롭다운을 누르면 선택창이 펼쳐지고, 아무거나 골라 클릭하면 선택된 항목으로 변경
 - 키워드 필터 기능 구현
+
+
