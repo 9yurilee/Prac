@@ -15,7 +15,7 @@ function App() {
       <Toggle />
       <Tab />
       {/* <Slider /> */}
-      {/* <Input /> */}
+      <Input />
       {/* <DropDown /> */}
     </div>
   );

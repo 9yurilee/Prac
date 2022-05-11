@@ -6,53 +6,69 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 const Input = () => {
-  const [clicked, setClicked] = react.useState(false);
-  const checkEmail = () => {};
+  const [warning, setWarning] = react.useState(false);
 
-  const confirmPW = () => {
-    setClicked(true);
+  const [showPw, setShowPw] = react.useState(false);
+
+  const clickEye = () => {
+    setShowPw(!showPw);
   };
-  return (
-    <DIV>
-      <div>
-        <label for="email">E-mail</label>
-        <InputWrap type="email" placeholder="E-mail" />
-        <IconWrap>
-          <CheckCircleIcon />
-        </IconWrap>
-      </div>
 
-      <InputWrap type="password" placeholder="Password" />
-      <IconWrap>
-        <VisibilityOffIcon color={clicked ? 'red' : ''} />
-      </IconWrap>
-    </DIV>
+  return (
+    <div className="input">
+      <Small>E-mail</Small>
+      <Wrap>
+        <InputWrap type="email" placeholder="E-mail" />
+        <CheckCircleIcon style={{ position: 'absolute', width: '18px', right: '30px', top: '5px' }} />
+        {warning ? <Error>Invalid E-mail address</Error> : ''}
+      </Wrap>
+
+      <Small>Password</Small>
+      <Wrap>
+        <InputWrap type={showPw ? 'text' : 'password'} placeholder="Password" />
+        {showPw ? (
+          <VisibilityIcon onClick={clickEye} style={{ color: '#0abab5', position: 'absolute', width: '22px', right: '30px', top: '5px' }} />
+        ) : (
+          <VisibilityOffIcon onClick={clickEye} style={{ color: 'dimgray', position: 'absolute', width: '22px', right: '30px', top: '5px' }} />
+        )}
+      </Wrap>
+    </div>
   );
 };
 
-const DIV = styled.div`
-  display: flex;
-  flex-direction: column;
+const Small = styled.div`
+  font-size: 11px;
+  color: dimgray;
+  margin: 0px 5px 2px;
 `;
 
-const Small = styled.div`
-  font-size: 10px;
+const Wrap = styled.div`
+  width: 330px;
+  height: 30px;
+  position: relative;
+  margin-bottom: 20px;
 `;
 const InputWrap = styled.input`
   width: 300px;
-  height: 35px;
-  border-radius: 5px;
-  font-size: 16px;
-  border: 1px #aaa solid;
-  :focus {
-    outline: 1px solid black;
-    border: none;
-  }
+  height: 30px;
+  border-radius: 4px;
+  background-color: #f3f3f3;
+  border: 1px solid #ddd;
+  color: dimgray;
+  padding-left: 10px;
   ::placeholder {
-    color: #aaa;
+    color: #ddd;
   }
-  margin: 30px 0px;
+  :focus {
+    outline: 1px solid dimgray;
+  }
 `;
 
-const IconWrap = styled.div``;
+const Error = styled.div`
+  color: red;
+  font-size: 11px;
+`;
+
+const PwWrap = styled.div``;
+
 export default Input;
