@@ -11,8 +11,7 @@ import Filter from './components/Filter';
 function App() {
   return (
     <div className="App">
-      {/* <TogglePrac /> */}
-      <Toggle />
+      \ <Toggle />
       <Tab />
       {/* <Slider /> */}
       <Input />
