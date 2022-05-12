@@ -6,9 +6,27 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 const Input = () => {
+  const [emailCheck, setEmailCheck] = react.useState(false);
   const [warning, setWarning] = react.useState(false);
-
   const [showPw, setShowPw] = react.useState(false);
+
+  const checkEmail = (e) => {
+    const reg_ = /([\w-.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+    const emailInput = e.target.value;
+    // setEmailCheck(emailInput);
+
+    if (emailInput === '') {
+      console.log('empty');
+    }
+
+    if (reg_.test(emailInput)) {
+      setWarning(false);
+      setEmailCheck(true);
+    } else {
+      setWarning(true);
+      setEmailCheck(false);
+    }
+  };
 
   const clickEye = () => {
     setShowPw(!showPw);
@@ -18,8 +36,8 @@ const Input = () => {
     <div className="input">
       <Small>E-mail</Small>
       <Wrap>
-        <InputWrap type="email" placeholder="E-mail" />
-        <CheckCircleIcon style={{ position: 'absolute', width: '18px', right: '30px', top: '5px' }} />
+        <InputWrap type="email" placeholder="E-mail" onChange={checkEmail} />
+        <CheckCircleIcon style={{ position: 'absolute', width: '18px', right: '30px', top: '5px', color: emailCheck ? '#0abab5' : '' }} />
         {warning ? <Error>Invalid E-mail address</Error> : ''}
       </Wrap>
 
