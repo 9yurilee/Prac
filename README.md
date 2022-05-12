@@ -14,8 +14,13 @@
 ## 3. Input
 - 인풋창에 이메일과 비밀번호 입력 ✔️
 - 비밀번호 입력란 우측 눈 표시를 누르면 비밀번호가 노출 ✔️ <br/>
-![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/97436315/168082485-2c3f2297-9baa-4798-b853-da7825aa9f64.gif)
-- 이메일 형식에 맞을 경우 자동으로 체크 표시
+  <details>
+  <summary>확인/summary>
+  ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/97436315/168091653-a7489658-b744-4a2b-89a4-06e711be83f6.gif)
+  </details>
+- 이메일 형식에 맞을 경우 자동으로 체크 표시 ✔️ <br/>
+![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/97436315/168091420-975686bd-c327-45b0-8749-919e73753397.gif)
+
 
 <br />
 
