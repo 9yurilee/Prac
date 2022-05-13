@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  color: #aaa;
+  color: #a4a4a4;
 }
 
 .toggle {
@@ -47,24 +47,11 @@
   border: 1px solid #bbb;
   border-radius: 5px;
 
-  padding: 5px 10px;
-
   display: flex;
   align-items: center;
 
-  cursor: pointer;
-}
-
-.search {
-  width: 280px;
-  height: 35px;
-  border: 1px solid #bbb;
-  border-radius: 5px;
-
-  padding: 5px 10px;
-
-  display: flex;
-  align-items: center;
+  position: relative;
 
   cursor: pointer;
+  margin-bottom: 5px;
 }
