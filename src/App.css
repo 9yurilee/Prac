@@ -40,3 +40,31 @@
   flex-direction: column;
   margin-bottom: 50px;
 }
+
+.dropdown {
+  width: 280px;
+  height: 35px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+
+  padding: 5px 10px;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.search {
+  width: 280px;
+  height: 35px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+
+  padding: 5px 10px;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}

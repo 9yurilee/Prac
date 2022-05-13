@@ -5,17 +5,16 @@ import Slider from './components/Slider';
 import Tab from './components/Tab';
 import Toggle from './components/Toggle';
 
-import TogglePrac from './components/TogglePrac';
 import Filter from './components/Filter';
 
 function App() {
   return (
     <div className="App">
-      \ <Toggle />
-      <Tab />
+      {/* <Toggle /> */}
+      {/* <Tab /> */}
       {/* <Slider /> */}
-      <Input />
-      {/* <DropDown /> */}
+      {/* <Input /> */}
+      <DropDown />
     </div>
   );
 }
