@@ -27,7 +27,8 @@
 <br />
 
 ## 5. DropDown
-- 드롭다운을 누르면 선택창이 펼쳐지고, 아무거나 골라 클릭하면 선택된 항목으로 변경
+- 드롭다운을 누르면 선택창이 펼쳐지고, 아무거나 골라 클릭하면 선택된 항목으로 변경 ✔️ <br/>
+![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/97436315/168242891-6b892a96-198e-49b0-b62a-7cf3e57bb2f5.gif)
 - 키워드 필터 기능 구현
 
 
