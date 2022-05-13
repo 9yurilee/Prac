@@ -6,7 +6,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 const DropDown = () => {
   const [isOpen, setIsOpen] = react.useState(false);
-  const [clickedMenu, setClickedMenu] = react.useState('전체');
+  const [clickedMenu, setClickedMenu] = react.useState('All Symbols');
   const [inputText, setInputText] = react.useState('');
 
   console.log(inputText);
